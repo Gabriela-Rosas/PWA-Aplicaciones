@@ -1,0 +1,34 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "Ejercicio",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serve/server.js",
+    "dev": "nodemon server/server.js --ignore \"server/subs-db.json\" ",
+    "generate-vapid": "web-push generate-vapid-keys --json > server/vapid.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.18.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.11.4",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "save": "^2.4.0",
+    "path": "^0.12.7",
+    "url-safe-base64": "^1.2.0",
+    "web-push": "^3.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
